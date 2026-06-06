@@ -1,0 +1,193 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* Subtle Tech Grid Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+        linear-gradient(rgba(18, 24, 38, 0.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 24, 38, 0.8) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: -1;
+}
+
+/* Container Layout */
+.container {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Header/Hero */
+.badge {
+    display: inline-block;
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-family: 'Courier Prime', monospace;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Courier Prime', monospace;
+}
+
+/* Briefing Card */
+.briefing-card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid #1e293b;
+    border-top: 4px solid #38bdf8; /* Detective Blue accent */
+    border-radius: 8px;
+    padding: 2.5rem;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    margin-bottom: 2rem;
+}
+
+.briefing-card h2 {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+    font-family: 'Courier Prime', monospace;
+}
+
+.briefing-card hr {
+    border: 0;
+    height: 1px;
+    background: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.briefing-card p {
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+}
+
+.briefing-card .objective {
+    background: rgba(56, 189, 248, 0.05);
+    border-left: 3px solid #38bdf8;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Targets Section */
+.targets-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.profile-card {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid #1e293b;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.profile-card h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.profile-card .role {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-family: 'Courier Prime', monospace;
+    margin-bottom: 0.75rem;
+}
+
+.profile-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+/* Interactive CTA Button */
+.action-area {
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0b0f19;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    font-family: 'Courier Prime', monospace;
+}
+
+.btn-primary:hover {
+    background: #00e5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0, 229, 255, 0.5);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.footer-note {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.footer-note a {
+    color: #64748b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    .targets-section { grid-template-columns: 1fr; }
+    .briefing-card { padding: 1.5rem; }
+}
