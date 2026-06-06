@@ -191,3 +191,50 @@ h1 {
     .targets-section { grid-template-columns: 1fr; }
     .briefing-card { padding: 1.5rem; }
 }
+
+/* Site Footer Styles */
+.site-footer {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #1e293b;
+    background: rgba(11, 15, 25, 0.9);
+}
+
+.footer-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.disclaimer {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.75rem;
+    color: #ef4444; /* Red accent for the legal notice */
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-info {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #475569;
+}
