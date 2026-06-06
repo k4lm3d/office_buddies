@@ -192,18 +192,15 @@ h1 {
     .briefing-card { padding: 1.5rem; }
 }
 
-/* Site Footer Styles */
+/* Site Footer Styles (Fixed for Container Integration) */
 .site-footer {
     width: 100%;
-    margin-top: 5rem;
-    padding: 2rem 1rem;
-    border-top: 1px solid #1e293b;
-    background: rgba(11, 15, 25, 0.9);
+    margin-top: 4rem; /* Keeps a clean separation from the action area */
+    padding-top: 2rem;
+    border-top: 1px solid #1e293b; /* Subtle line dividing content from legal info */
 }
 
 .footer-container {
-    max-width: 700px;
-    margin: 0 auto;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
@@ -211,16 +208,16 @@ h1 {
 .disclaimer {
     font-family: 'Courier Prime', monospace;
     font-size: 0.75rem;
-    color: #ef4444; /* Red accent for the legal notice */
+    color: #ef4444; 
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-weight: 700;
 }
 
 .contact-info {
     font-size: 0.85rem;
     color: #94a3b8;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .contact-info a {
